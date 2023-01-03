@@ -1,0 +1,44 @@
+@consultaGet = http://localhost:3000/consultaGet
+@consultaPost = http://localhost:3000/consultaPost
+@consultaGetCOD = http://localhost:3000/consultaGetCOD
+@consultaDelete = http://localhost:3000/consultaDelete
+
+###
+GET {{consultaGet}}
+
+
+###
+POST {{consultaPost}}
+Content-Type: application/json
+
+
+{
+    "COD": "91",
+    "NOMBRE": "Lautaro",
+    "DIRECCION": "Ortiz",
+    "NUMERO": "100",
+    "LOCALIDAD": "2",
+    "DESCRIPCION": "Comerciante",
+    "JOB_ID": "10"
+}
+
+
+###
+GET {{consultaGetCOD}}
+Content-Type: application/json
+
+
+{
+    "COD": "22"
+}
+
+
+
+###
+DELETE {{consultaDelete}}
+Content-Type: application/json
+
+
+{
+    "COD": "89"
+}
